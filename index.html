@@ -9,25 +9,6 @@
   <body>
     <header>
       <h1>Job Listings</h1>
-      <div class="filters">
-        <button class="filter" data-filter="frontend">Frontend</button>
-        <button class="filter" data-filter="backend">Backend</button>
-        <button class="filter" data-filter="fullstack">Fullstack</button>
-        <button class="filter" data-filter="junior">Junior</button>
-        <button class="filter" data-filter="midweight">Midweight</button>
-        <button class="filter" data-filter="senior">Senior</button>
-        <button class="filter" data-filter="python">Python</button>
-        <button class="filter" data-filter="ruby">Ruby</button>
-        <button class="filter" data-filter="javascript">JavaScript</button>
-        <button class="filter" data-filter="html">HTML</button>
-        <button class="filter" data-filter="css">CSS</button>
-        <button class="filter" data-filter="react">React</button>
-        <button class="filter" data-filter="sass">Sass</button>
-        <button class="filter" data-filter="vue">Vue</button>
-        <button class="filter" data-filter="django">Django</button>
-        <button class="filter" data-filter="ror">RoR</button>
-        <button class="clear">Clear</button>
-      </div>
     </header>
     <main class="main">
       <div class="job-listings">
@@ -38,13 +19,24 @@
           data-languages="html css javascript"
           data-tools=""
         >
+          <!-- <p class="company">
+          Photosnap <span class="badge new">NEW!</span>
+          <span class="badge featured">FEATURED</span>
+        </p> -->
           <div class="icon">
             <img src="./images/photosnap.svg" alt="" />
           </div>
           <div class="content">
-          <h2>Senior Frontend Developer</h2>
-          <p>Photosnap - 1d ago</p>
-          <p>Full Time - USA only</p>
+            <h2>Senior Frontend Developer</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <p>Photosnap - 1d ago</p>
+            <p>Full Time - USA only</p>
           </div>
         </div>
         <div
@@ -58,9 +50,16 @@
             <img src="./images/manage.svg" alt="" />
           </div>
           <div class="content">
-          <h2>Fullstack Developer</h2>
-          <p>Manage - 1d ago</p>
-          <p>Part Time - Remote</p>
+            <h2>Fullstack Developer</h2>
+            <div class="tags">
+              <span>Fullstack</span>
+              <span>Midweight</span>
+              <span>Python</span>
+              <span>React</span>
+              <span>JavaScript</span>
+            </div>
+            <p>Manage - 1d ago</p>
+            <p>Part Time - Remote</p>
           </div>
         </div>
         <div
@@ -74,9 +73,17 @@
             <img src="./images/account.svg" alt="" />
           </div>
           <div class="content">
-          <h2>Junior Frontend Developer</h2>
-          <p>Account - 2d ago</p>
-          <p>Part Time - USA only</p></div>
+            <h2>Junior Frontend Developer</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <p>Account - 2d ago</p>
+            <p>Part Time - USA only</p>
+          </div>
         </div>
         <div
           class="job-card"
@@ -89,9 +96,17 @@
             <img src="./images/myhome.svg" alt="" />
           </div>
           <div class="content">
-          <h2>Junior Frontend Developer</h2>
-          <p>MyHome - 5d ago</p>
-          <p>Contract - USA only</p></div>
+            <h2>Junior Frontend Developer</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>junior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <p>MyHome - 5d ago</p>
+            <p>Contract - USA only</p>
+          </div>
         </div>
         <div
           class="job-card"
@@ -105,6 +120,13 @@
           </div>
           <div class="content">
             <h2>Software Engineer</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
             <p>Loop Studios - 1w ago</p>
             <p>Full Time - Worldwide</p>
           </div>
@@ -121,6 +143,13 @@
           </div>
           <div class="content">
             <h2>Junior Backend Developer</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
             <p>Facet - 2w ago</p>
             <p>Full Time - UK only</p>
           </div>
@@ -137,6 +166,13 @@
           </div>
           <div class="content">
             <h2>Junior Developer</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
             <p>Shortly - 2w ago</p>
             <p>Full Time - Worldwide</p>
           </div>
@@ -153,6 +189,13 @@
           </div>
           <div class="content">
             <h2>Junior Frontend Developer</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
             <p>Insure - 2w ago</p>
             <p>Full Time - USA only</p>
           </div>
@@ -169,6 +212,13 @@
           </div>
           <div class="content">
             <h2>Full Stack Engineer</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
             <p>Eyecam Co. - 3w ago</p>
             <p>Full Time - Worldwide</p>
           </div>
@@ -185,12 +235,19 @@
           </div>
           <div class="content">
             <h2>Front-end Dev</h2>
+            <div class="tags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
             <p>The Air Filter Company - 1mo ago</p>
             <p>Part Time - Worldwide</p>
           </div>
         </div>
       </div>
     </main>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -21,40 +21,34 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
+    background-color: #297fb937;
+    padding: 20px;
 }
-
-.filters .filter,
-.filters .clear {
-    background-color: #3498db;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    margin: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
-}
-
-.filters .filter:hover,
-.filters .clear:hover {
-    background-color: #2980b9;
-}
-
 main {
     display: flex;
     justify-content: center;
     padding: 10px;
+    
+}
+select{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #297fb937;
 }
 
+label {
+    margin-right: 10px;
+  }
 .job-listings {
-    max-width: 800px;
-    width: 100%;
+    width: 90%;
 }
-
+.tags{
+    border: #2980b9;
+    padding: 10px;
+    display: flex;
+}
 .job-card {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
     background-color: white;
     border-left: 5px solid #3498db;
     border-radius: 5px;
@@ -83,12 +77,9 @@ main {
     margin: 5px 0;
 }
 
-.job-card .tags {
+.job-card .tags span{
     display: flex;
     flex-wrap: wrap;
-}
-
-.job-card .tag {
     background-color: #ecf0f1;
     border-radius: 3px;
     color: #2c3e50;
@@ -99,11 +90,16 @@ main {
 
 @media (max-width: 768px) {
     .job-listings {
+        display: grid;
         padding: 10px;
+        width: 100%;
     }
 
     .job-card {
         padding: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .job-card h2 {
