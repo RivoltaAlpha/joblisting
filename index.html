@@ -3,27 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Frontend Mentor | Job Listings</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
@@ -48,7 +29,7 @@
         <button class="clear">Clear</button>
       </div>
     </header>
-    <main>
+    <main class="main">
       <div class="job-listings">
         <div
           class="job-card"
@@ -57,9 +38,14 @@
           data-languages="html css javascript"
           data-tools=""
         >
+          <div class="icon">
+            <img src="./images/photosnap.svg" alt="" />
+          </div>
+          <div class="content">
           <h2>Senior Frontend Developer</h2>
           <p>Photosnap - 1d ago</p>
           <p>Full Time - USA only</p>
+          </div>
         </div>
         <div
           class="job-card"
@@ -68,9 +54,14 @@
           data-languages="python"
           data-tools="react"
         >
+          <div class="icon">
+            <img src="./images/manage.svg" alt="" />
+          </div>
+          <div class="content">
           <h2>Fullstack Developer</h2>
           <p>Manage - 1d ago</p>
           <p>Part Time - Remote</p>
+          </div>
         </div>
         <div
           class="job-card"
@@ -79,11 +70,125 @@
           data-languages="sass javascript"
           data-tools="react"
         >
+          <div class="icon">
+            <img src="./images/account.svg" alt="" />
+          </div>
+          <div class="content">
           <h2>Junior Frontend Developer</h2>
           <p>Account - 2d ago</p>
-          <p>Part Time - USA only</p>
+          <p>Part Time - USA only</p></div>
         </div>
-        <!-- Add more job cards with appropriate data- attributes -->
+        <div
+          class="job-card"
+          data-role="frontend"
+          data-level="junior"
+          data-languages="css javascript"
+          data-tools=""
+        >
+          <div class="icon">
+            <img src="./images/myhome.svg" alt="" />
+          </div>
+          <div class="content">
+          <h2>Junior Frontend Developer</h2>
+          <p>MyHome - 5d ago</p>
+          <p>Contract - USA only</p></div>
+        </div>
+        <div
+          class="job-card"
+          data-role="fullstack"
+          data-level="midweight"
+          data-languages="javascript sass ruby"
+          data-tools=""
+        >
+          <div class="icon">
+            <img src="./images/loop-studios.svg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Software Engineer</h2>
+            <p>Loop Studios - 1w ago</p>
+            <p>Full Time - Worldwide</p>
+          </div>
+        </div>
+        <div
+          class="job-card"
+          data-role="backend"
+          data-level="junior"
+          data-languages="ruby"
+          data-tools="ror"
+        >
+          <div class="icon">
+            <img src="./images/faceit.svg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Junior Backend Developer</h2>
+            <p>Facet - 2w ago</p>
+            <p>Full Time - UK only</p>
+          </div>
+        </div>
+        <div
+          class="job-card"
+          data-role="frontend"
+          data-level="junior"
+          data-languages="html css javascript"
+          data-tools=""
+        >
+          <div class="icon">
+            <img src="./images/shortly.svg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Junior Developer</h2>
+            <p>Shortly - 2w ago</p>
+            <p>Full Time - Worldwide</p>
+          </div>
+        </div>
+        <div
+          class="job-card"
+          data-role="frontend"
+          data-level="junior"
+          data-languages="vue javascript sass"
+          data-tools=""
+        >
+          <div class="icon">
+            <img src="./images/insure.svg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Junior Frontend Developer</h2>
+            <p>Insure - 2w ago</p>
+            <p>Full Time - USA only</p>
+          </div>
+        </div>
+        <div
+          class="job-card"
+          data-role="fullstack"
+          data-level="midweight"
+          data-languages="javascript python"
+          data-tools="django"
+        >
+          <div class="icon">
+            <img src="./images/eyecam-co.svg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Full Stack Engineer</h2>
+            <p>Eyecam Co. - 3w ago</p>
+            <p>Full Time - Worldwide</p>
+          </div>
+        </div>
+        <div
+          class="job-card"
+          data-role="frontend"
+          data-level="junior"
+          data-languages="sass javascript"
+          data-tools=""
+        >
+          <div class="icon">
+            <img src="./images/the-air-filter-company.svg" alt="" />
+          </div>
+          <div class="content">
+            <h2>Front-end Dev</h2>
+            <p>The Air Filter Company - 1mo ago</p>
+            <p>Part Time - Worldwide</p>
+          </div>
+        </div>
       </div>
     </main>
     <script src="scripts.js"></script>

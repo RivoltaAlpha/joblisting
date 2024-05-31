@@ -1,0 +1,122 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("./images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filters .filter,
+.filters .clear {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.filters .filter:hover,
+.filters .clear:hover {
+    background-color: #2980b9;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.job-listings {
+    max-width: 800px;
+    width: 100%;
+}
+
+.job-card {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    background-color: white;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.content{
+    display: grid;
+    margin-left: 20px;
+}
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h2 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.job-card p {
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
+.job-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-card .tag {
+    background-color: #ecf0f1;
+    border-radius: 3px;
+    color: #2c3e50;
+    font-size: 0.9em;
+    margin: 5px 5px 0 0;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    .job-listings {
+        padding: 10px;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card h2 {
+        font-size: 1.2em;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters .filter,
+    .filters .clear {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
