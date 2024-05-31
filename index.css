@@ -9,20 +9,15 @@ body {
 }
 
 header {
+    display: grid;
     background-image: url("./images/bg-header-desktop.svg");
+    background-color:hsl(180, 29%, 50%);
     background-repeat: no-repeat;
     color: black;
     padding: 20px;
     text-align: center;
-}
-
-.filters {
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    margin: 20px 0;
-    background-color: #297fb937;
-    padding: 20px;
 }
 main {
     display: flex;
@@ -80,13 +75,25 @@ label {
 .job-card .tags span{
     display: flex;
     flex-wrap: wrap;
-    background-color: #ecf0f1;
+    background-color:hsl(180, 29%, 50%);
     border-radius: 3px;
-    color: #2c3e50;
+    color: white;
     font-size: 0.9em;
     margin: 5px 5px 0 0;
     padding: 5px 10px;
 }
+#searchBox {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    margin-bottom: 20px;
+    border: #2980b9;
+    display: flex;
+  }
+  .header input {
+    padding: 50px;
+  }
 
 @media (max-width: 768px) {
     .job-listings {
@@ -114,5 +121,5 @@ label {
     .filters .clear {
         width: 100%;
         margin: 5px 0;
-    }
+    } 
 }

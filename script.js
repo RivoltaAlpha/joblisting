@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const tags = document.querySelectorAll(".tags span");
   const jobCards = document.querySelectorAll(".job-card");
+  const searchBox = document.getElementById('searchBox');
 
   tags.forEach((tag) => {
     tag.addEventListener("click", function () {
@@ -23,4 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  searchBox.addEventListener('keyup', filterJobs);
+
+    function filterJobs() {
+        const filter = searchBox.value.trim().toLowerCase();
+
+        jobCards.forEach(card => {
+            const role = card.getAttribute('data-role').toLowerCase();
+            const languages = card.getAttribute('data-languages').toLowerCase();
+
+            if (role.includes(filter) || languages.includes(filter)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
 });
