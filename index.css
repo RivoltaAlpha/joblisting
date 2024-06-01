@@ -13,6 +13,8 @@ header {
   background-image: url("./images/bg-header-desktop.svg");
   background-color: hsl(180, 29%, 50%);
   background-repeat: no-repeat;
+  background-position: center;
+  margin: 5px;
   color: black;
   padding: 20px;
   text-align: center;
@@ -104,6 +106,19 @@ label {
 }
 
 @media (max-width: 768px) {
+header{
+  background-image: url("./images/bg-header-mobile.svg");
+  background-position: center;
+  margin: 5px;
+  width: 500px;
+}
+#searchBox {
+  padding: 15px;
+  width: 200px;
+}
+#backButton {
+  padding: 5px 5px;
+}
   .job-listings {
     display: grid;
     padding: 10px;
