@@ -42,6 +42,7 @@ label {
   border: #2980b9;
   padding: 10px;
   display: flex;
+  cursor: pointer;
 }
 .job-card {
   display: flex;
